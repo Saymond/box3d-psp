@@ -1,0 +1,21 @@
+# Build
+build/
+*.o
+*.a
+*.elf
+*.pbp
+EBOOT.PBP
+PARAM.SFO
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Box3D upstream (cloned separately)
+box3d/

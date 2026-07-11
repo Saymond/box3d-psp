@@ -1,0 +1,22 @@
+Subject: [PATCH] Include simd_vfpu.h under B3_SIMD_VFPU
+---
+Hooks the VFPU SIMD shim into simd.h so Box3D's internal vector ops
+(contact solver, broad phase, mesh collision) use VFPU instructions
+when compiled for PSP.
+
+diff --git a/src/simd.h b/src/simd.h
+--- a/src/simd.h
++++ b/src/simd.h
+@@ -161,6 +161,12 @@
+
+ #else
+
++#elif defined( B3_SIMD_VFPU )
++
++#include "simd_vfpu.h"
++
++#else
++
+ // scalar math
+ typedef struct b3V32
+ {
