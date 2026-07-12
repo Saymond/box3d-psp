@@ -6,6 +6,10 @@ A port of [Box3D](https://github.com/erincatto/box3d) — Erin Catto's 3D physic
 - **Graphics** run on the PSP **GU** (graphics unit) with hardware transform and a CPU-computed per-vertex lighting pass.
 - **4 interactive scenes**: stacks, brick wall, pyramid, drivable car on bumpy terrain.
 
+## Demo
+
+![Demo](media/video.gif)
+
 ## Repository layout
 
 ```
