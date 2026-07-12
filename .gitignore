@@ -19,3 +19,6 @@ Thumbs.db
 
 # Box3D upstream (cloned separately)
 box3d/
+
+# Exclude raw video, use gif instead
+media/video.mp4
